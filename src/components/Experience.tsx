@@ -1,11 +1,11 @@
 import "./CSS/Main.css";
 
 const Experience = () => {
-    return (
-        <div className="Experience">
-            <h1>Experience</h1>
-        </div>
-    )
-}
+  return (
+    <div className="Experience">
+      <p className="HeaderDiv">Experience</p>
+    </div>
+  );
+};
 
 export default Experience;
