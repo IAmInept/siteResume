@@ -6,4 +6,13 @@ footer {
     padding-bottom: 1.66em;
     padding-top: 1.66em;
     background: linear-gradient(0deg, #121212, #242424);
+<<<<<<< HEAD
+=======
+}
+
+@media (prefers-color-scheme: light) {
+    footer {
+        background: linear-gradient(180deg, #ffffff, #242424);
+    }
+>>>>>>> d692791 (mac link)
 }
