@@ -3,7 +3,7 @@ import "./CSS/Main.css";
 const HeroSection = () => {
   return (
     <div className="HeroSection">
-      <h1> About Me</h1>
+      <p className="MainHeader">About Me</p>
     </div>
   );
 };
