@@ -1,6 +1,10 @@
+import "./CSS/Main.css";
+
 const Qualifications = () => {
     return (
-        <h1>Qualifications</h1>
+        <div className="Qualifications">
+            <h1>Qualifications</h1>
+        </div>
     )
 }
 

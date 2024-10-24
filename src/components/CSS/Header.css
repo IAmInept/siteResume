@@ -1,0 +1,13 @@
+.navBarIcons {
+    display: inline-flex;
+    padding: 0.1rem;
+    margin: 0.5rem
+}
+
+nav {
+    background: linear-gradient(180deg, #121212, #242424);
+    padding-top: 0.66em;
+    padding-bottom: 0.66em;
+    display: flex;
+    justify-content: center;
+}

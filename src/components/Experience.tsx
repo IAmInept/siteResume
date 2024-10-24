@@ -1,6 +1,10 @@
+import "./CSS/Main.css";
+
 const Experience = () => {
     return (
-        <h1>Experience</h1>
+        <div className="Experience">
+            <h1>Experience</h1>
+        </div>
     )
 }
 
