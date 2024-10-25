@@ -31,6 +31,7 @@ p {
 }
 
 .HeaderDiv {
+  margin: 12px;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -61,13 +62,32 @@ footer {
   background: linear-gradient(0deg, #121212, #242424);
 }
 
+.HeroSection {
+  padding: 1.5em
+}
+
+.QualContainer {
+  display: inline-flex;
+  gap: 2em;
+}
+
+.QualCard {
+  max-width: 40vw;
+  min-width: 20vw;
+  background-color: #121212;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
 @media (prefers-color-scheme: light) {
   nav {
     background: linear-gradient(180deg, #242424, #ffffff);
   }
-
   footer {
     background: none;
+  }
+  .QualCard, .HeroSection {
+    background-color: #e8f0fe
   }
 }
 >>>>>>> b4937e36c1acae5b87fc3070e25e02d2d801653b
