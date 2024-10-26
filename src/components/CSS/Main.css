@@ -49,8 +49,9 @@ footer {
 .PortCard {
   max-width: 45vw;
   min-width: 25vw;
-  background: radial-gradient(circle at bottom left, #ff3a3a, transparent 60%),
-  radial-gradient(circle at top right, #3affff, transparent 60%);
+  background: #121212;
+  /* background: radial-gradient(circle at bottom left, #ff3a3a, transparent 60%), */
+  /* radial-gradient(circle at top right, #3affff, transparent 60%); */
   opacity: 1;
   padding: 1rem;
   display: grid;
@@ -58,17 +59,30 @@ footer {
   grid-gap: 10px;
 }
 
-
 .CardContent {
-  grid-area: 1 / 1 / span 4 / span 5;
+  grid-area: 2 / 1 / span 4 / span 5;
+}
+
+.CardTitle {
+  grid-area: 1 / 1 / 1 / span 2;
+}
+
+.Portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 95vw; */
 }
 
 .PortfolioLink {
-  grid-area: 5 / 5;
+  grid-area: 6 / 5;
+  text-align: center;
+  max-width: 140px;
+  max-height: 45px;
   padding: 10px 15px 10px 15px;
   background-color: black;
   color: white;
-  border-radius: 23.5px;
+  border-radius: 1.42rem;
 }
 
 .PortfolioLink:hover {
@@ -76,13 +90,16 @@ footer {
 }
 
 .Experience {
-  min-width: 45vw;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 2rem;
 }
 
 .ExperienceBox {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: left;
+  width: 30vw;
 }
 
 p,
