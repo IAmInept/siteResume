@@ -2,25 +2,43 @@ import "./CSS/Main.css";
 
 const Qualifications = () => {
   return (
-    <div className="Qualifications">
-      <p className="HeaderDiv">Qualifications</p>
-
-      <div className="QualContainer">
-        <div className="QualCard">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            minima sequi fugiat rerum laudantium ullam necessitatibus commodi
-            nesciunt, obcaecati enim mollitia reprehenderit magni voluptatum
-            tempora ipsum pariatur et iste quo!
+    <div className="Portfolio">
+      <p className="HeaderDiv">Portfolio</p>
+      <div className="PortContainer">
+        <div className="PortCard">
+          <h2>Website Design</h2>
+          <p className="CardContent">
+            Although this website was made entirely by myself, this is not the
+            discipline I wish to go into, and was made simply as a hobby to test
+            my skills and knowledge, and showcase my interest for learning new
+            skills regardless of their importance or relevance.
           </p>
+          <a
+            href="https://www.figma.com/design/4235rOuOdXPYbIZN5MVExS/Untitled?node-id=22-6&t=FLwCT6MpyCDzwHlK-1"
+            target="_blank"
+            className="PortfolioLink"
+          >
+            View UI Design
+          </a>
         </div>
-        <div className="QualCard">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            fugiat exercitationem ullam obcaecati. Ducimus nemo accusantium,
-            maiores voluptatum cum eligendi placeat asperiores inventore,
-            nostrum cupiditate dolorem. Minima unde et perferendis.
+        <div className="PortCard">
+          <h2>Github Projects</h2>
+          <p className="CardContent">
+            Alongside the UI Designs for this website, you can also find all my
+            published FOSS code for this site and many other projects that I
+            have worked on, or am working on! Including but not limited to:
+            HTML, CSS, JS, JSX (React), Rust, C#, Python and many more.
           </p>
+          <a
+            href="https://github.com/IAmInept"
+            target="_blank"
+            className="PortfolioLink"
+          >
+            Visit Github Repos
+          </a>
+        </div>
+        <div className="PortCard">
+          <p></p>
         </div>
       </div>
     </div>
