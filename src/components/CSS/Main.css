@@ -1,10 +1,9 @@
-.HeaderDiv {
-  text-align: center;
-  margin: 12px;
-  font-size: 24px;
-  font-weight: 500;
-  font-style: normal;
+/* Root & Main Changes */
+p,h2 {
+  margin: 0;
 }
+
+/* Header */
 
 .navBarIcons {
   display: inline-flex;
@@ -20,20 +19,59 @@ nav {
   justify-content: center;
 }
 
-footer {
-  position: fixed;
-  text-align: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding-bottom: 1.66em;
-  padding-top: 1.66em;
-  background: linear-gradient(0deg, #121212, #242424);
-}
+/* Main Body */
 
 .HeroSection {
   padding: 1.5em;
   text-align: center;
+}
+
+.TitleContainer {
+  text-align: center;
+  margin: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* CTA / Portfolio */
+
+.CTA {
+  display: inline-flex;
+  width: calc(100vw - (1.5em*2));
+  padding: 1.5em;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Experience {
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  gap: 2rem;
+}
+
+.ExperienceBox {
+  width: 35vw
+}
+
+.Employment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  gap: 2rem;
+}
+
+/* Portfolio*/
+
+.Portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
 }
 
 .PortContainer {
@@ -45,7 +83,6 @@ footer {
   column-gap: 2em;
   row-gap: 1.5em;
 }
-
 .PortCard {
   max-width: 45vw;
   min-width: 25vw;
@@ -59,19 +96,12 @@ footer {
   grid-gap: 10px;
 }
 
-.CardContent {
-  grid-area: 2 / 1 / span 4 / span 5;
-}
-
 .CardTitle {
   grid-area: 1 / 1 / 1 / span 2;
 }
 
-.Portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* max-width: 95vw; */
+.CardContent {
+  grid-area: 2 / 1 / span 4 / span 5;
 }
 
 .PortfolioLink {
@@ -89,33 +119,30 @@ footer {
   background-color: white;
 }
 
-.Experience {
-  /* justify-content: center; */
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  
-  gap: 2rem;
+/* Footer / Bottom of Page */
+
+footer {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 1.66em;
+  padding-top: 1.66em;
+  background: linear-gradient(0deg, #121212, #242424);
 }
 
-.ExperienceBox {
-  width: 30vw;
-}
-
-p,
-h2 {
-  margin: 0;
-}
+/* Media Specific Content (Light/Dark Theme) */
 
 @media (prefers-color-scheme: light) {
   nav {
     background: linear-gradient(180deg, #242424, #ffffff);
   }
   footer {
-    background: none;
+    /* background: none; */
+    background: linear-gradient(180deg, #ffffff, #242424);
   }
   .QualCard,
   .HeroSection {
-    /* background-color: #e8f0fe; */
+    background-color: #e8f0fe;
   }
 }
