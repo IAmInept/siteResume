@@ -5,18 +5,14 @@ p,h2 {
 
 /* Header */
 
-.navBarIcons {
-  display: inline-flex;
-  padding: 0.1rem;
-  margin: 0.5rem;
-}
-
 nav {
   background: linear-gradient(180deg, #121212, #242424);
   padding-top: 0.66em;
   padding-bottom: 0.66em;
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  size: 48px;
 }
 
 /* Main Body */
@@ -133,7 +129,16 @@ footer {
 
 /* Media Specific Content (Light/Dark Theme) */
 
+@media (prefers-color-scheme: dark) {
+  path {
+    stroke: white;
+  }
+}
+
 @media (prefers-color-scheme: light) {
+  path {
+    fill: black;
+  }
   nav {
     background: linear-gradient(180deg, #242424, #ffffff);
   }
@@ -142,7 +147,7 @@ footer {
     background: linear-gradient(180deg, #ffffff, #242424);
   }
   .QualCard,
-  .HeroSection {
+  .HeroSection, .PortCard {
     background-color: #e8f0fe;
   }
 }

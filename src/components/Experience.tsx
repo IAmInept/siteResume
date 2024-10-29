@@ -28,7 +28,7 @@ const Experience = () => {
           </div>
           <div className="EmploymentBox">
             <h2>Adnams - The Swan | Southwold</h2>
-            <p>Front of House & Kitchen| 2018 - 2021</p>
+            <p>Front of House & Kitchen | 2018 - 2021</p>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import "./CSS/Main.css";
 const Portfolio = () => {
   return (
     <>
-      <p className="TitleContainer">Portfolio</p>
+      <p className="TitleContainer">Hobbies, Projects & Portfolio</p>
       <div className="Portfolio">
         <div className="PortContainer">
           <div className="PortCard">
