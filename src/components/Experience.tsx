@@ -8,7 +8,8 @@ const Experience = () => {
         <div className="Experience">
           <div className="ExperienceBox">
             <h2> University of Staffordshire</h2>
-            <p> BSc (Hons) | Computer Science | 2023 - 2026</p>
+            <p> BSc (Hons)  |  Computer Science  |  2023 - 2026</p>
+            <p>Course Representative</p>
           </div>
           <div className="ExperienceBox">
             <h2>East Coast College</h2>

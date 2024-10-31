@@ -3,7 +3,7 @@ import "./CSS/Main.css";
 const Footer = () => {
   return (
     <>
-      {/* <a href="#top" id="Return">
+      <a href="#top" id="Return">
         <svg
           aria-label="Return to Top"
           width="48"
@@ -20,7 +20,7 @@ const Footer = () => {
             strokeLinejoin="round"
           />
         </svg>
-      </a> */}
+      </a>
       <footer>© 2024 Gian-Luca Wallace, All rights reserved.</footer>
     </>
   );

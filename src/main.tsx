@@ -6,6 +6,7 @@ import HeroSection from './components/Hero.tsx'
 import Portfolio from './components/Portfolio.tsx'
 import Experience from './components/Experience.tsx'
 import Footer from './components/Footer.tsx'
+import Certifications from './components/Certifications.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
     <HeroSection />
     <Experience />
     <Portfolio />
+    <Certifications />
     <Footer />
   </StrictMode>,
 )

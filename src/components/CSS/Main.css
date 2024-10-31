@@ -1,5 +1,6 @@
 /* Root & Main Changes */
-p,h2 {
+p,
+h2 {
   margin: 0;
 }
 
@@ -34,7 +35,7 @@ nav {
 
 .CTA {
   display: inline-flex;
-  width: calc(100vw - (1.5em*2));
+  width: calc(100vw - (1.5em * 2));
   padding: 1.5em;
   justify-content: center;
   gap: 2rem;
@@ -50,7 +51,7 @@ nav {
 }
 
 .ExperienceBox {
-  width: 35vw
+  width: 35vw;
 }
 
 .Employment {
@@ -62,15 +63,6 @@ nav {
 }
 
 /* Portfolio*/
-
-/* .Portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 3%;
-  margin-left: 2em;
-  margin-right: 2em;
-} */
 
 .PortContainer {
   flex-direction: row;
@@ -89,26 +81,36 @@ nav {
   align-items: center;
   justify-content: center;
 
-  background: radial-gradient(circle at bottom left, #ff383885, transparent 100%),
-  radial-gradient(circle at top right, #3affff7e, transparent 100%);
-  backdrop-filter: blur(500px);
+  background: radial-gradient(
+      circle at bottom left,
+      hsla(0, 100%, 61%, 0.3),
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at top right,
+      hsla(180, 100%, 61%, 0.3),
+      transparent 100%
+    );
 
-  overflow: hidden;
   width: 400px;
   height: 240px;
   padding: 1rem;
+}
+
+.PortCard:hover {
+  box-shadow: 7px 5px 3px #121212;
 }
 
 .PortCard:hover .CardContent {
   /* background: rgba(18, 18, 18, 0.2); */
   visibility: visible;
 }
-.PortCard:hover #figmaLogo {
+.PortCard:hover .Logos {
   display: none;
 }
 
 .CardTitle {
-  text-align: left;
+  align-self: flex-start;
 }
 
 .CardContent {
@@ -122,7 +124,7 @@ nav {
   width: 400px;
   height: 220px;
   row-gap: 1em;
-  
+
   /* right: -100%; */
 }
 
@@ -131,7 +133,7 @@ nav {
 }
 
 .PortfolioLink {
-  justify-content: right;
+  align-self: flex-end;
   text-align: center;
   max-width: 140px;
   max-height: 45px;
@@ -146,7 +148,14 @@ nav {
 }
 
 #ContainerContent {
-  line-height: 1.2em
+  line-height: 1.2em;
+}
+
+
+/*  Certifications */
+
+.CertCard {
+  text-align: center;
 }
 
 /* Footer / Bottom of Page */
@@ -181,7 +190,8 @@ footer {
     background: linear-gradient(180deg, #ffffff, #242424);
   }
   .QualCard,
-  .HeroSection, .PortCard {
+  .HeroSection,
+  .PortCard {
     background-color: #e8f0fe;
   }
 }
