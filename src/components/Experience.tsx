@@ -16,9 +16,7 @@ const Experience = () => {
           </div>
           <div className="ExperienceBox">
             <h2> Pakefield Highschool</h2>
-            <p>
-              GCSEs | 2013 - 2018
-            </p>
+            <p>GCSEs | 2013 - 2018</p>
           </div>
         </div>
         <div className="Employment">

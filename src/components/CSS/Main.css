@@ -63,45 +63,75 @@ nav {
 
 /* Portfolio*/
 
-.Portfolio {
+/* .Portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 3%;
-}
+  margin-left: 2em;
+  margin-right: 2em;
+} */
 
 .PortContainer {
-  display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   column-gap: 2em;
   row-gap: 1.5em;
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
 }
+
 .PortCard {
-  max-width: 45vw;
-  min-width: 25vw;
-  background: #121212;
-  /* background: radial-gradient(circle at bottom left, #ff3a3a, transparent 60%), */
-  /* radial-gradient(circle at top right, #3affff, transparent 60%); */
-  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle at bottom left, #ff383885, transparent 100%),
+  radial-gradient(circle at top right, #3affff7e, transparent 100%);
+  backdrop-filter: blur(500px);
+
+  overflow: hidden;
+  width: 400px;
+  height: 240px;
   padding: 1rem;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
+}
+
+.PortCard:hover .CardContent {
+  /* background: rgba(18, 18, 18, 0.2); */
+  visibility: visible;
+}
+.PortCard:hover #figmaLogo {
+  display: none;
 }
 
 .CardTitle {
-  grid-area: 1 / 1 / 1 / span 2;
+  text-align: left;
 }
 
 .CardContent {
-  grid-area: 2 / 1 / span 4 / span 5;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 400px;
+  height: 220px;
+  row-gap: 1em;
+  
+  /* right: -100%; */
+}
+
+#figmaLogo {
+  height: 90px;
 }
 
 .PortfolioLink {
-  grid-area: 6 / 5;
+  justify-content: right;
   text-align: center;
   max-width: 140px;
   max-height: 45px;
@@ -113,6 +143,10 @@ nav {
 
 .PortfolioLink:hover {
   background-color: white;
+}
+
+#ContainerContent {
+  line-height: 1.2em
 }
 
 /* Footer / Bottom of Page */
